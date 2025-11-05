@@ -11,7 +11,7 @@ const Signin = () => {
     e.preventDefault();
     setError("");
     try {
-      const res = await axios.post("http://localhost:4000/api/signin", { email, password });
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URI}/api/signin`, { email, password });
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       window.location.href = "/profile";

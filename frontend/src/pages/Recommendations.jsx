@@ -43,7 +43,7 @@ export default function Recommendation() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "x-goog-api-key": `${process.env.GEMINI_API_KEY}`, 
+            "x-goog-api-key": "AIzaSyDlNYAinO0b7eZ3CbyaUVok4wQk6w-m-4g", // 👈 put your Gemini API key in .env
           },
           body: JSON.stringify({
             contents: [

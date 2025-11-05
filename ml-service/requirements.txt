@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+numpy
+pillow
+tensorflow  # optional, heavy; you can skip if using Roboflow
+requests
+prophet    # for forecasting (or fbprophet)
+scikit-learn
+joblib

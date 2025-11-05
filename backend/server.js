@@ -199,9 +199,9 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const PRICE_GEMINI_API_KEY = process.env.PRICE;
 
 // --- Routes ---
-const mlRoutes = require('./routes/ml');
-const authRoutes = require('./routes/auth'); // if you have auth
-const utilsRoutes = require('./routes/utils'); // weather, soil, etc.
+const mlRoutes = require('./src/routes/ml');
+const authRoutes = require('./src/routes/auth'); // if you have auth
+const utilsRoutes = require('./src/routes/utils'); // weather, soil, etc.
 
 app.use('/api/ml', mlRoutes);
 app.use('/api/auth', authRoutes);

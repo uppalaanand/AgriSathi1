@@ -1,3 +1,8 @@
 {
-    "reWrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://agri-sathi1.vercel.app/api/$1"
+    }
+  ]
 }

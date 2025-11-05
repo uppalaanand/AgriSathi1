@@ -6,7 +6,7 @@ export default function CropPlanner() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const GEMINI_API_KEY = process.env.GEMINI_API_KEY // <-- replace with your actual Gemini API key
+  const GEMINI_API_KEY = "AIzaSyDlNYAinO0b7eZ3CbyaUVok4wQk6w-m-4g"; // <-- replace with your actual Gemini API key
 
   // Fallback random crop plan
   const fallbackPlans = {
